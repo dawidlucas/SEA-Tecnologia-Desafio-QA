@@ -1,0 +1,21 @@
+{
+  "name": "sea-tecnologia-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:report": "cypress run --env allure=true && allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cypress": "^15.18.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "@shelex/cypress-allure-plugin": "^2.41.2"
+  }
+}
