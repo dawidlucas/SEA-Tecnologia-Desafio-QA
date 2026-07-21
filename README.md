@@ -18,6 +18,7 @@ A decisão de não automatizar os casos com bug foi intencional: automatizar sob
 
 ## 📁 Estrutura do projeto
 
+```text
 cypress/
 ├── e2e/
 │   ├── cadastroFuncionario.cy.js   # Testes do fluxo de cadastro de funcionário
@@ -33,6 +34,8 @@ cypress/
 └── support/
     ├── commands.js
     └── e2e.js
+```
+    
 
 ## 🏗️ Arquitetura e boas práticas aplicadas
 
