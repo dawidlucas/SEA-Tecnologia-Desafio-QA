@@ -15,10 +15,14 @@ A decisão de não automatizar os casos com bug foi intencional: automatizar sob
 - [Allure Report](https://allurereport.org/) — Framework de relatórios interativos e métricas de execução
 - [Faker.js (pt-BR)](https://fakerjs.dev/) — geração de dados fictícios para os testes
 - JavaScript (ES6+)
+- GitHub Actions — pipeline de Integração Contínua (CI)
 
 ## 📁 Estrutura do projeto
 
 ```text
+.github/
+└── workflows/
+    └── cypress.yml                 # Pipeline de CI (GitHub Actions)
 cypress/
 ├── e2e/
 │   ├── cadastroFuncionario.cy.js   # Testes do fluxo de cadastro de funcionário
@@ -27,7 +31,7 @@ cypress/
 │   ├── cadastroValidoDados.json    # Massa de dados para cadastro válido
 │   └── atestado.pdf                # Arquivo utilizado no upload de atestado
 ├── helpers/
-│   └── fakerHelper.js              # Geração de dados dinâmicos (nome)
+│   └── fakerHelper.js              # Geração de dados dinâmicos (nome, etc.)
 ├── pages/
 │   ├── home.page.js                # Page Object da tela principal
 │   └── cadastroFuncionario.page.js # Page Object da tela de cadastro
@@ -81,6 +85,15 @@ Os demais 21 casos de teste evidenciaram inconsistências no sistema (ex.: diver
 
 6. Ou execute em modo headless (via terminal, sem interface):
    npx cypress run
+
+## 🔄 Integração Contínua (CI)
+
+Como iniciativa adicional (não solicitada no desafio), o projeto conta com um pipeline de CI configurado em .github/workflows/cypress.yml. Ele roda automaticamente a cada push ou Pull Request para a branch main:
+
+- Faz checkout do código
+- Instala Node.js (mesma versão utilizada localmente) e as dependências
+- Executa a suíte completa de testes Cypress em modo headless
+- Em caso de falha, anexa screenshots e vídeos da execução ao resultado do workflow
 
 ## 📊 Relatório de Execução (Allure Report)
 
