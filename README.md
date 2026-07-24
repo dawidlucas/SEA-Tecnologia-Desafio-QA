@@ -1,5 +1,9 @@
 # Desafio Técnico QA — Automação de Testes (Cypress)
 
+Este repositório contém a automação de testes desenvolvida em Cypress e a documentação completa do processo de QA.
+
+---
+
 Automação de testes end-to-end para o fluxo de **cadastro de funcionários** e a **tela principal de listagem**, desenvolvida como parte de um desafio técnico para vaga de QA.
 
 ## 🎯 Sobre o projeto
@@ -61,9 +65,27 @@ A ordem apresentada representa a implementação dos testes automatizados.
 | CT-004 | Ação do botão "Limpar filtros" |
 | CT-007 | Ação do botão "+ Adicionar Funcionário" |
 
-## 🐛 Bugs identificados (não automatizados)
+## 🐛 Bugs identificados e Documentação de QA
 
-Os demais 21 casos de teste evidenciaram inconsistências no sistema (ex.: divergência entre nome cadastrado e nome exibido na listagem, ausência de validação de campos obrigatórios, entre outros). As evidências detalhadas de cada bug foram registradas.
+Os demais 21 casos de teste evidenciaram inconsistências no sistema (ex.: divergência entre nome cadastrado e nome exibido na listagem, ausência de validação de campos obrigatórios, entre outros).
+
+A documentação completa do processo de testes, estratégia e evidências de bugs foi centralizada e está disponível nos links abaixo:
+
+- 📊 **[Acessar Cenários de Teste (Google Sheets)](https://docs.google.com/spreadsheets/d/1msF7DpDPeZbI6fjiuAmaDz7M7xcuLy0V/edit?gid=455362360#gid=455362360)**  
+  *Mapeamento completo dos 25 casos de teste*
+
+- 🐛 **[Acessar Defeitos / Bugs (Google Sheets)](https://docs.google.com/spreadsheets/d/1isI2iL4zDZA4zmOwyDnx_PzH3WvhFowB/edit?gid=455362360#gid=455362360)**  
+  *Relatório detalhado contendo a evidência e passo a passo de cada um dos 21 bugs identificados.*
+
+- 📝 **[Acessar Plano de Testes (Google Docs)](https://docs.google.com/document/d/14cqNsBy08BXaoojO4vwt8XNRHWhmuNzF/edit)**  
+
+- 📝 **[Acessar Nota de Estratégia (Google Docs)](https://docs.google.com/document/d/1j2XPpxXvwGc2VGYIw64koYPhhlEdlqnl/edit?rtpof=true&tab=t.0)**  
+
+- 📝 **[Acessar Diário de Uso de IA (Google Docs)](https://docs.google.com/document/d/1LGUsFLWtY2hUdzje6PxVaRl06b2m-MAH/edit)**  
+
+- 📝🐛 **[Acessar Relatório de Defeitos (Google Docs)](https://docs.google.com/document/d/1pSa0C5Prtd5R9lZrsGxxn1D4aPgeIZjg/edit)**
+  
+  
 
 ## ▶️ Como executar o projeto
 
